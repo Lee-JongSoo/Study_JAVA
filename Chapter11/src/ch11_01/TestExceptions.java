@@ -13,7 +13,7 @@ public class TestExceptions {
             System.out.println("finally");
         }
         System.out.println("end of main");
-        System.out.println("by 2017250035 이종수");
+        System.out.print("by 2017250035 이종수");
     }
 
     static void doRisky(String test) throws ScaryException{

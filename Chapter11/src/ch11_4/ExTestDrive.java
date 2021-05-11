@@ -4,7 +4,7 @@ class MyEx extends Exception{}
 
 public class ExTestDrive {
     public static void main(String[] args){
-        String test = "yes";
+        String test = "no";
 
         try {
             System.out.print("t");
@@ -24,5 +24,6 @@ public class ExTestDrive {
             throw new MyEx();
         }
         System.out.print("r");
+        return;
     }
 }
