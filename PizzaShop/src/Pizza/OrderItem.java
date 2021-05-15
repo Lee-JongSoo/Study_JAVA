@@ -17,7 +17,7 @@ public class OrderItem {
     private String size;
     private String pizzaName;
 
-    //Default constructor with no arguments that initializes four instance variables with basic pizza information.
+    //4개의 인스턴스를 "Meat Lovers, 10' Personal, 1, 10.00"의 값으로 초기화하는 인수가 없는 기본 생성자 입니다.
     public OrderItem(){
         price = 10.00;
         quantity = 1;
@@ -25,7 +25,7 @@ public class OrderItem {
         pizzaName = "Meat Lovers";
     }
 
-    //4 argument constructor to initialize 4 instance variables with parameter values
+    //4개의 인스턴스 변수를 매개 변수 값으로 초기화하는 4개의 인수 생성자입니다.
     public OrderItem(double price, int quantity, String size, String pizzaName) {
         this.price = price;
         this.quantity = quantity;
@@ -63,7 +63,7 @@ public class OrderItem {
         return pizzaName;
     }
 
-    //Overridden toString method to print nice format
+    //nice한 출력을 위해 toString()을 오버라이딩 했습니다.
     @Override
     public String toString(){
         return "\n************************************************\n"+
@@ -73,9 +73,5 @@ public class OrderItem {
                 "\n3) 16' Large - " +  String.valueOf(getPrice() + 9.0) +
                 "\n4) 18' Extra Large - " +  String.valueOf(getPrice() + 13.5) +
                 "\n\nYour choice (1 ~ 4)? ";
-    }
-
-    public void choicePizzaSizeAndPrices(){
-
     }
 }

@@ -53,6 +53,4 @@ public class QuizCard implements Serializable {
     public String getHint() {
         return hint;
     }
-
-
 }
