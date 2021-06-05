@@ -17,6 +17,7 @@ public class SimpleChatClient {
     public static void main(String[] args){
         SimpleChatClient client = new SimpleChatClient();
         client.go();
+        System.out.println("by 2017250035 이종수");
     }
 
     public void go(){
@@ -39,7 +40,6 @@ public class SimpleChatClient {
 
         Thread readerThread = new Thread(new IncomingReader());
         readerThread.start();
-
         frame.getContentPane().add(BorderLayout.CENTER, mainPanel);
         frame.setSize(700, 500);
         frame.setVisible(true);
@@ -52,11 +52,7 @@ public class SimpleChatClient {
             reader = new BufferedReader(streamReader);
             writer = new PrintWriter(sock.getOutputStream());
             System.out.println("networking established");
-        }
-        catch(IOException ex)
-        {
-            ex.printStackTrace();
-        }
+        } catch(IOException ex) { ex.printStackTrace(); }
     }
 
     public class SendButtonListener implements ActionListener {
@@ -64,11 +60,7 @@ public class SimpleChatClient {
             try {
                 writer.println(outgoing.getText());
                 writer.flush();
-
-            }
-            catch (Exception ex) {
-                ex.printStackTrace();
-            }
+            }catch (Exception ex) {ex.printStackTrace(); }
             outgoing.setText("");
             outgoing.requestFocus();
         }
@@ -82,10 +74,7 @@ public class SimpleChatClient {
                     System.out.println("client read " + message);
                     incoming.append(message + "\n");
                 }
-            } catch (IOException ex)
-            {
-                ex.printStackTrace();
-            }
+            }catch (IOException ex) { ex.printStackTrace(); }
         }
     }
 }

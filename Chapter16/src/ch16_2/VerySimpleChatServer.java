@@ -6,7 +6,6 @@ import java.util.*;
 
 public class VerySimpleChatServer {
     ArrayList clientOutputStreams;
-
     public class ClientHandler implements Runnable {
         BufferedReader reader;
         Socket sock;
@@ -32,6 +31,7 @@ public class VerySimpleChatServer {
 
     public static void main(String[] args) {
         new VerySimpleChatServer().go();
+        System.out.println("by 2017250035 이종수");
     }
 
     public void go() {
@@ -46,9 +46,7 @@ public class VerySimpleChatServer {
                 t.start();
                 System.out.println("Got a connection!");
             }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        } catch (Exception ex) { ex.printStackTrace(); }
     }
 
     public void tellEveryone(String message) {
@@ -58,9 +56,7 @@ public class VerySimpleChatServer {
                 PrintWriter writer = (PrintWriter) it.next();
                 writer.println(message);
                 writer.flush();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
+            } catch (Exception ex) { ex.printStackTrace(); }
         }
     }
 }

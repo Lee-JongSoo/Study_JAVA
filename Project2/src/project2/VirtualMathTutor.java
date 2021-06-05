@@ -86,5 +86,6 @@ public class VirtualMathTutor {
     public static void main(String[] args){
         VirtualMathTutor mathTutor = new VirtualMathTutor();
         mathTutor.go();
+        System.out.println("by 2017250035 이종수");
     }
 }

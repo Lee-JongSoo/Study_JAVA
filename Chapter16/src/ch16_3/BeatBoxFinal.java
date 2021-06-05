@@ -11,7 +11,9 @@ import java.util.*;
 import java.awt.event.*;
 import java.net.*;
 
+
 public class BeatBoxFinal {
+
     JPanel mainPanel;
     JList incomingList;
     JTextField userMessage;
@@ -27,7 +29,6 @@ public class BeatBoxFinal {
     Sequence mySequence = null;
     Track track;
     JFrame theFrame;
-
     String[] instrumentNames = {"Bass Drum", "Closed Hi-Hat",
             "Open Hi-Hat","Acoustic Snare", "Crash Cymbal", "Hand Clap",
             "High Tom", "Hi Bongo", "Maracas", "Whistle", "Low Conga",
@@ -37,21 +38,19 @@ public class BeatBoxFinal {
 
     public static void main (String[] args) {
         new BeatBoxFinal().startUp("Lee");
-        new BeatBoxFinal().startUp("Jong");
+        System.out.println("by 2017250035 이종수");
     }
 
     public void startUp(String name) {
         userName = name;
         try {
-            Socket sock = new Socket("192.168.0.161", 4242);
+            Socket sock = new Socket("192.168.1.162", 4242);
             out = new ObjectOutputStream(sock.getOutputStream());
             in = new ObjectInputStream(sock.getInputStream());
             Thread remote = new Thread(new RemoteReader());
             remote.start();
         }
-        catch (Exception ex) {
-            System.out.println("couldn't connect - you'll have to play alone.");
-        }
+        catch (Exception ex) { System.out.println("couldn't connect - you'll have to play alone."); }
         setUpMidi();
         buildGUI();
     }
@@ -107,7 +106,6 @@ public class BeatBoxFinal {
 
         background.add(BorderLayout.EAST, buttonBox);
         background.add(BorderLayout.WEST, nameBox);
-
         theFrame.getContentPane().add(background);
 
         GridLayout grid = new GridLayout(16,16);
@@ -122,7 +120,6 @@ public class BeatBoxFinal {
             checkboxList.add(c);
             mainPanel.add(c);
         }
-
         theFrame.setBounds(50,50,300,300);
         theFrame.pack();
         theFrame.setVisible(true);
@@ -135,6 +132,7 @@ public class BeatBoxFinal {
             sequence = new Sequence(Sequence.PPQ,4);
             track = sequence.createTrack();
             sequencer.setTempoInBPM(120);
+
         } catch(Exception e) {e.printStackTrace();}
     }
 
@@ -157,6 +155,7 @@ public class BeatBoxFinal {
             makeTracks(trackList);
         }
         track.add(makeEvent(192,9,1,0,15));
+
         try {
             sequencer.setSequence(sequence);
             sequencer.setLoopCount(sequencer.LOOP_CONTINUOUSLY);
@@ -201,7 +200,6 @@ public class BeatBoxFinal {
                     checkboxState[i] = true;
                 }
             }
-
             try {
                 out.writeObject(userName + nextNum++ + ": " + userMessage.getText());
                 out.writeObject(checkboxState);
@@ -233,7 +231,7 @@ public class BeatBoxFinal {
 
         public void run() {
             try {
-                while ((obj = in.readObject()) != null) {
+                while ((obj=in.readObject()) != null) {
                     System.out.println("got an object from server");
                     System.out.println(obj.getClass());
                     String nameToShow = (String) obj;
@@ -242,9 +240,7 @@ public class BeatBoxFinal {
                     listVector.add(nameToShow);
                     incomingList.setListData(listVector);
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            }catch (Exception e) { e.printStackTrace(); }
         }
     }
 
@@ -253,9 +249,7 @@ public class BeatBoxFinal {
             JCheckBox check = (JCheckBox) checkboxList.get(i);
             if (checkboxState[i]) {
                 check.setSelected(true);
-            }
-            else
-            {
+            } else {
                 check.setSelected(false);
             }
         }
@@ -279,7 +273,6 @@ public class BeatBoxFinal {
             ShortMessage a = new ShortMessage();
             a.setMessage(comd, chan, one, two);
             event = new MidiEvent(a, tick);
-
         }catch(Exception e) { }
         return event;
     }

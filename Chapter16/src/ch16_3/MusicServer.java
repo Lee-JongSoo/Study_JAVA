@@ -10,6 +10,7 @@ public class MusicServer {
 
     public static void main(String[] args) {
         new MusicServer().go();
+        System.out.println("by 2017250035 이종수");
     }
 
     public class ClientHandler implements Runnable {
@@ -20,7 +21,6 @@ public class MusicServer {
             try {
                 sock = clientSOcket;
                 in = new ObjectInputStream(sock.getInputStream());
-
             } catch (Exception ex) { ex.printStackTrace(); }
         }
 

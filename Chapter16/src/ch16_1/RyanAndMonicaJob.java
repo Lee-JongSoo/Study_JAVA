@@ -2,7 +2,6 @@ package ch16_1;
 
 class BankAccount{
     private int balance = 100;
-
     public int getBalance(){
         return balance;
     }
@@ -13,7 +12,6 @@ class BankAccount{
 
 public class RyanAndMonicaJob implements Runnable{
     private BankAccount account = new BankAccount();
-
     public static void main(String[] args){
         RyanAndMonicaJob theJob = new RyanAndMonicaJob();
         Thread one = new Thread(theJob);
@@ -22,6 +20,7 @@ public class RyanAndMonicaJob implements Runnable{
         two.setName("Monica");
         one.start();
         two.start();
+        System.out.println("by 2017250035 이종수");
     }
 
     public void run(){
