@@ -1,0 +1,77 @@
+/*
+Author : Lee Jong Soo
+E-mail : jongsu2645@gmail.com
+Course : Java Web Programming
+Assignment : Programming Assignment Project3 : BeatBox
+Due Date : 06/14/2021
+File : MusicServer.java
+Purpose : Improving the BeatBox program
+Compiler/IDE : Java SE Development Kit 8u181/IntelliJ IDEA
+Operating System : MAC OS
+*/
+package Project3;
+
+import java.io.*;
+import java.net.*;
+import java.util.*;
+
+public class MusicServer {
+    ArrayList clientOutputStreams;
+
+    public static void main(String[] args) {
+        new MusicServer().go();
+        System.out.println("by 2017250035 이종수");
+    }
+
+    public class ClientHandler implements Runnable {
+        ObjectInputStream in;
+        Socket sock;
+
+        public ClientHandler(Socket clientSOcket) {
+            try {
+                sock = clientSOcket;
+                in = new ObjectInputStream(sock.getInputStream());
+            } catch (Exception ex) { ex.printStackTrace(); }
+        }
+
+        public void run() {
+            Object o1;
+            Object o2;
+            try {
+                while ((o1 = in.readObject()) != null) {
+                    o2 = in.readObject();
+                    System.out.println("read two objects");
+                    tellEveryone(o1, o2);
+                }
+            } catch (Exception ex) { ex.printStackTrace(); }
+        }
+    }
+
+    public void go() {
+        System.out.println("MusicServer Start!");
+        clientOutputStreams = new ArrayList();
+        try {
+            ServerSocket serverSock = new ServerSocket(4242);
+            while(true) {
+                Socket clientSocket = serverSock.accept();
+                ObjectOutputStream out = new ObjectOutputStream(clientSocket.getOutputStream());
+                clientOutputStreams.add(out);
+
+                Thread t = new Thread(new ClientHandler(clientSocket));
+                t.start();
+                System.out.println("got a connection -- 이종수 서버");
+            }
+        } catch (Exception ex) { ex.printStackTrace(); }
+    }
+
+    public void tellEveryone(Object one, Object two) {
+        Iterator it = clientOutputStreams.iterator();
+        while (it.hasNext()) {
+            try {
+                ObjectOutputStream out = (ObjectOutputStream) it.next();
+                out.writeObject(one);
+                out.writeObject(two);
+            } catch (Exception ex) { ex.printStackTrace(); }
+        }
+    }
+}

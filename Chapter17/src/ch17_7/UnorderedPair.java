@@ -1,7 +1,6 @@
 package ch17_7;
 
 import ch17_5.Pair;
-import ch17_6.TwoTypePair;
 
 public class UnorderedPair<T> extends Pair<T> {
     public UnorderedPair(){

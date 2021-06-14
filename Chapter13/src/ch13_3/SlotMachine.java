@@ -47,7 +47,7 @@ public class SlotMachine extends JFrame implements ActionListener{
         panel.add(button);
         button.addActionListener(this);
         add(panel);
-        setTitle("My Game");
+        setTitle("My Game by 2017250035 이종수");
         setVisible(true);
     }
 

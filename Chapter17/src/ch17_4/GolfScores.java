@@ -1,8 +1,6 @@
 package ch17_4;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class GolfScores {
     public static void main(String[] args){
         ArrayList<Double> score = new ArrayList<>();
@@ -13,12 +11,10 @@ public class GolfScores {
         showDifference(score);
         System.out.println("by 2017250035 이종수");
     }
-
     public static void fillArrayList(ArrayList<Double> a){
         System.out.println("Enter a list of nonnegative numbers.");
         System.out.println("Mark the end of list with a negative number.");
         Scanner keyboard = new Scanner(System.in);
-
         double next;
         next = keyboard.nextDouble();
         while (next >= 0){
@@ -26,7 +22,6 @@ public class GolfScores {
             next = keyboard.nextDouble();
         }
     }
-
     public static double computeAverage(ArrayList<Double> a){
         double total = 0;
         for (Double element : a) total = total + element;
@@ -39,7 +34,6 @@ public class GolfScores {
             return 0;
         }
     }
-
     public static void showDifference(ArrayList<Double> a){
         double average = computeAverage(a);
         System.out.println("Average of the " + a.size() + " scores = " + average);

@@ -2,6 +2,7 @@ package ch01_1;
 
 public class Loopy {
     public static void main(String[] args){
+        System.out.println((int) (Math.random() * 2));
         int x = 1;
         System.out.println("Before the Loop");
         while(x<4){

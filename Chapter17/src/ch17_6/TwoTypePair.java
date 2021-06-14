@@ -1,7 +1,5 @@
 package ch17_6;
 
-import ch17_5.Pair;
-
 public class TwoTypePair<T1,T2> {
     private T1 first;
     private T2 second;
