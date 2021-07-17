@@ -1,3 +1,4 @@
+
 package ch03_2;
 
 public class Dog {
