@@ -1,4 +1,3 @@
-
 package ch02_2;
 
 public class GameLauncher {
