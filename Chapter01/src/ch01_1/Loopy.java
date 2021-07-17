@@ -14,4 +14,5 @@ public class Loopy {
         System.out.println();
         System.out.println("by 2017250035 이종수");
     }
+    
 }
