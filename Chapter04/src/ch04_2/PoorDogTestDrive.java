@@ -1,3 +1,4 @@
+
 package ch04_2;
 
 class PoorDog{
