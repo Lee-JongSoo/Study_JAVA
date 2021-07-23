@@ -12,7 +12,6 @@ public class Customer {
         bonusRatio = 0.01;
         System.out.println("Customer() constructor call");
     }
-
     public Customer(int customerID, String customerName) {
         this.customerID = customerID;
         this.customerName = customerName;

@@ -10,7 +10,6 @@ public class VIPCustomer extends Customer{
         saleRatio = 0.1;
         System.out.println("VIPCustomer() constructor call");
     }
-
     public VIPCustomer(int customerID, String customerName, int agentID){
         super(customerID, customerName);
         customerGrade = "VIP";
