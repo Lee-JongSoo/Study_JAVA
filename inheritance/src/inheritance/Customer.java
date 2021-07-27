@@ -10,14 +10,14 @@ public class Customer {
     public Customer(){
         customerGrade = "SLIVER";
         bonusRatio = 0.01;
-        System.out.println("Customer() constructor call");
+        //System.out.println("Customer() constructor call");
     }
     public Customer(int customerID, String customerName) {
         this.customerID = customerID;
         this.customerName = customerName;
         customerGrade = "SLIVER";
         bonusRatio = 0.01;
-        System.out.println("Customer() constructor call");
+        //System.out.println("Customer() constructor call");
     }
 
     public int calcPrice(int price){

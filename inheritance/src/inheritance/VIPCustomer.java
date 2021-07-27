@@ -8,7 +8,7 @@ public class VIPCustomer extends Customer{
         customerGrade = "VIP";
         bonusRatio = 0.05;
         saleRatio = 0.1;
-        System.out.println("VIPCustomer() constructor call");
+        //System.out.println("VIPCustomer() constructor call");
     }
     public VIPCustomer(int customerID, String customerName, int agentID){
         super(customerID, customerName);
@@ -16,9 +16,10 @@ public class VIPCustomer extends Customer{
         bonusRatio = 0.05;
         saleRatio = 0.1;
         this.agentID = agentID;
-        System.out.println("VIPCustomer() constructor call");
+        //System.out.println("VIPCustomer() constructor call");
     }
 
+    @Override
     public int calcPrice(int price){
         bonusPoint += price * bonusRatio;
         return price - (int)(price * saleRatio);
