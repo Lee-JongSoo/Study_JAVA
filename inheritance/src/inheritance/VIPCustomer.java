@@ -29,4 +29,3 @@ public class VIPCustomer extends Customer{
         return agentID;
     }
 }
-

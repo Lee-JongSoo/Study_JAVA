@@ -13,5 +13,3 @@ public class OverridingTest3 {
         System.out.println(vc.getCustomerName() + " 님이 지불해야 하는 금액은 " + vc.calcPrice(10000));
     }
 }
-
-

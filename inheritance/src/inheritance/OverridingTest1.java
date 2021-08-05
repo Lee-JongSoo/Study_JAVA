@@ -15,4 +15,3 @@ public class OverridingTest1 {
         System.out.println(customerKim.getCustomerName() + " 님이 지불해야 하는 금액은 " + customerKim.calcPrice(price));
     }
 }
-

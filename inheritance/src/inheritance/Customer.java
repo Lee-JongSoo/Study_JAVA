@@ -1,6 +1,5 @@
 package inheritance;
 
-
 public class Customer {
     protected int customerID;
     protected String customerName;
