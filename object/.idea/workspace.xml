@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99c75651-71c3-46be-8ab9-835d2b3f1dbb" name="Default Changelist" comment="" />
+    <list default="true" id="30120bd6-c9f4-46ed-b70f-7bf39baef322" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/object/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/HashCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/StringEquals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +17,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -18,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1wDAMOmIPfZMoL2j7wYRLBSLMi2" />
+  <component name="ProjectId" id="1wJ4Pyh1lN2vcudYIRjzsTIab3H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,44 +35,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RunManager">
-    <configuration name="SchedulerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scheduler.SchedulerTest" />
-      <module name="interface" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scheduler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.SchedulerTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="99c75651-71c3-46be-8ab9-835d2b3f1dbb" name="Default Changelist" comment="" />
-      <created>1627982736839</created>
+      <changelist id="30120bd6-c9f4-46ed-b70f-7bf39baef322" name="Default Changelist" comment="" />
+      <created>1628163339518</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1627982736839</updated>
-      <workItem from="1627982738008" duration="1675000" />
-      <workItem from="1628072172313" duration="2157000" />
-      <workItem from="1628163328577" duration="11000" />
+      <updated>1628163339518</updated>
+      <workItem from="1628163340756" duration="128000" />
     </task>
     <servers />
   </component>
@@ -83,6 +61,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
