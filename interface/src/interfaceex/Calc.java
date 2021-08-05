@@ -31,3 +31,4 @@ public interface Calc {
 		System.out.println("private static method");
 	}
 }
+

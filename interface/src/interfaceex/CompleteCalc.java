@@ -22,3 +22,4 @@ public class CompleteCalc extends Calculator {
 		System.out.println("Calc interface");
 	}
 }
+

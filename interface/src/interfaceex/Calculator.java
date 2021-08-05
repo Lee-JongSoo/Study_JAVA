@@ -11,3 +11,4 @@ public abstract class Calculator implements Calc{
 		return num1-num2;
 	}
 }
+
