@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30120bd6-c9f4-46ed-b70f-7bf39baef322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/object/EqualsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/object/object/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/object/object/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/HashCodeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +30,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.EqualsTest">
+  <component name="RunManager" selected="Application.HashCodeTest">
     <configuration name="EqualsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="object.EqualsTest" />
+      <module name="object" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="object.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashCodeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="object.HashCodeTest" />
       <module name="object" />
       <extension name="coverage">
         <pattern>
@@ -74,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashCodeTest" />
         <item itemvalue="Application.EqualsTest" />
         <item itemvalue="Application.ToStringEx" />
       </list>
@@ -88,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628163339518</updated>
       <workItem from="1628163340756" duration="128000" />
-      <workItem from="1628490737323" duration="1477000" />
+      <workItem from="1628490737323" duration="1813000" />
     </task>
     <servers />
   </component>
