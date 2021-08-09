@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30120bd6-c9f4-46ed-b70f-7bf39baef322" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/object/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/HashCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/object/object/EqualsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/object/object/EqualsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/object/object/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/object/object/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/EqualsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/EqualsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.HashCodeTest">
+  <component name="RunManager" selected="Application.EqualsTest">
     <configuration name="EqualsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="object.EqualsTest" />
       <module name="object" />
@@ -90,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HashCodeTest" />
         <item itemvalue="Application.EqualsTest" />
+        <item itemvalue="Application.HashCodeTest" />
         <item itemvalue="Application.ToStringEx" />
       </list>
     </recent_temporary>
@@ -105,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628163339518</updated>
       <workItem from="1628163340756" duration="128000" />
-      <workItem from="1628490737323" duration="1813000" />
+      <workItem from="1628490737323" duration="2138000" />
     </task>
     <servers />
   </component>

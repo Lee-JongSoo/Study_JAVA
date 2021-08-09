@@ -23,6 +23,11 @@ class Student{
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return studentID;
+    }
 }
 
 public class EqualsTest {
@@ -54,5 +59,11 @@ public class EqualsTest {
         }else {
             System.out.println("different");
         }
+
+        System.out.println("studentLee hascode : " + studentLee.hashCode());
+        System.out.println("studentSang hascode : " + studentSang.hashCode());
+
+        System.out.println("studentLee real address : " + System.identityHashCode(studentLee));
+        System.out.println("studentSang real address : " + System.identityHashCode(studentSang));
     }
 }
