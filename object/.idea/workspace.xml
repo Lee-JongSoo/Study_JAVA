@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30120bd6-c9f4-46ed-b70f-7bf39baef322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/object/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/HashCodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/StringEquals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/ToStringEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Book.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +32,37 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="ToStringEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="object.ToStringEx" />
+      <module name="object" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="object.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ToStringEx" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628163339518</updated>
       <workItem from="1628163340756" duration="128000" />
+      <workItem from="1628490737323" duration="613000" />
     </task>
     <servers />
   </component>
@@ -61,5 +89,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
