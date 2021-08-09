@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30120bd6-c9f4-46ed-b70f-7bf39baef322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/object/ObjectCloneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/object/object/EqualsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/object/object/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/object/object/Student.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/object/EqualsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/EqualsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Point.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628163339518</updated>
       <workItem from="1628163340756" duration="128000" />
-      <workItem from="1628490737323" duration="2939000" />
+      <workItem from="1628490737323" duration="3328000" />
     </task>
     <servers />
   </component>
